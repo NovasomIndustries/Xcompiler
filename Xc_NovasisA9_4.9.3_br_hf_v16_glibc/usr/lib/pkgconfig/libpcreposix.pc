@@ -1,0 +1,13 @@
+# Package Information for pkg-config
+
+prefix=/Devel/NOVAsom_SDK/Xcompiler/Xc_NovasisA9_4.9.3_br_hf_v16_glibc/usr
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: libpcreposix
+Description: PCREPosix - Posix compatible interface to libpcre
+Version: 8.38
+Libs: -L${libdir} -lpcreposix
+Cflags: -I${includedir} 
+Requires.private: libpcre

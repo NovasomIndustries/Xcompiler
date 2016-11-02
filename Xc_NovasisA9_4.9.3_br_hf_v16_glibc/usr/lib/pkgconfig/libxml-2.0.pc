@@ -1,0 +1,13 @@
+prefix=/Devel/NOVAsom_SDK/Xcompiler/Xc_NovasisA9_4.9.3_br_hf_v16_glibc/usr
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+modules=1
+
+Name: libXML
+Version: 2.9.4
+Description: libXML library version2.
+Requires:
+Libs: -L${libdir} -lxml2
+Libs.private:      -lm  
+Cflags: -I${includedir}/libxml2 

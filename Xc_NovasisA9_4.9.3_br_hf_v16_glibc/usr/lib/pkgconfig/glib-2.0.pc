@@ -1,0 +1,16 @@
+prefix=/Devel/NOVAsom_SDK/Xcompiler/Xc_NovasisA9_4.9.3_br_hf_v16_glibc/usr
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+glib_genmarshal=glib-genmarshal
+gobject_query=gobject-query
+glib_mkenums=glib-mkenums
+
+Name: GLib
+Description: C Utility Library
+Version: 2.48.1
+Requires.private: libpcre
+Libs: -L${libdir} -lglib-2.0 
+Libs.private: -pthread  -L/Devel/NOVAsom_SDK/Xcompiler/Xc_NovasisA9_4.9.3_br_hf_v16_glibc/usr/lib -lpcre      
+Cflags: -I${includedir}/glib-2.0 -I${libdir}/glib-2.0/include 

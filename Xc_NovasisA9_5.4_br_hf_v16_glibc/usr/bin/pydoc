@@ -1,0 +1,5 @@
+#!/Devel/NOVAsom_SDK/Xcompiler/Xc_NovasisA9_5.4_br_hf_v16_glibc/usr/bin/python2.7
+
+import pydoc
+if __name__ == '__main__':
+    pydoc.cli()

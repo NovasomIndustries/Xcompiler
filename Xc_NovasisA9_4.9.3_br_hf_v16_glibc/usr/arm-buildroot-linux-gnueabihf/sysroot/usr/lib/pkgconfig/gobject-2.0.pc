@@ -1,0 +1,12 @@
+prefix=/usr
+exec_prefix=/usr
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: GObject
+Description: GLib Type, Object, Parameter and Signal Library
+Requires: glib-2.0
+Version: 2.48.1
+Libs: -L${libdir} -lgobject-2.0
+Libs.private: -L/Devel/NOVAsom_SDK/Xcompiler/Xc_NovasisA9_4.9.3_br_hf_v16_glibc/usr/arm-buildroot-linux-gnueabihf/sysroot/usr/lib -lffi  
+Cflags:
